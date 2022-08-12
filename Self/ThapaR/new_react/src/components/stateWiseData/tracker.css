@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Noto+Sans&family=Nunito:wght@200&family=Orbitron&family=Raleway:wght@100;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #ffffff;
+    background-color: #1a1b2f;
+}
+
+h2{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Raleway';
+}
+
+h1{
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 10px;
+    text-decoration-line:underline;
+    font-family:"Raleway" ;
+
+}
+
+
+section{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;    
+    align-items:center;
+    justify-content: space-around;
+    
+
+
+  
+}
+
+.card__main{
+    margin: 20px;
+    width: 400px;
+    height: 200px;
+    /* background-color: red; */
+  
+}
+
+.one{
+    background-color: #1f4068;
+}
+
+.two{
+    background-color: #689a97;
+}
+.three{
+    background-color: #855e2a;
+}
+
+.four{
+    background-color: #25855d;
+}
+
+.five{
+    background-color: #301551;
+}
+
+.six{
+    background-color: #3b7171;
+}
+
+
+
+.card__total{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 60px;
+    font-family:"Kurale" ;
+    text-shadow:  10px 20px 12px black;
+    
+    
+}
+
+.card__smallx{
+    padding-top: 0px;
+}

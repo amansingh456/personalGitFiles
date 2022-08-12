@@ -1,0 +1,45 @@
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: coral;
+    border-radius: 50%; 
+    animation-name: rock;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    position: relative; /* is se kya hoga hum iski position left right kar sakte hai*/
+    animation-timing-function: ease-in; /* is se kya animation slow start hogi fir vo apne normal speed me aajyegi*/
+    animation-timing-function: ease-out; /* is se kya hoga animation slow end hogi*/
+    animation-timing-function: ease-in-out; /* is se start bhi slow hogi or end bhi slow bech me speed se chlegi*/
+
+}
+
+@keyframes rock{
+   0%{
+       top:0;
+       left: 0;
+       background-color: cornflowerblue;
+   }
+   25%{
+       top: 0;
+       left: 300px;
+       background-color: palevioletred;
+   }
+
+   50%{
+    top: 300px;
+    left: 300px;
+    background-color: black;
+   }
+
+   75%{
+    top: 300px;
+    left: 0;
+    background-color: green;
+   }
+   100%{
+    top: 0;
+    left: 0;
+    background-color: indigo;
+   }
+}

@@ -1,0 +1,23 @@
+
+/* transform property se aap apne element ko (rotate , skew , scale , translate kar sakte hai )  */
+
+.box{
+    width: 100px;
+    height: 100px;
+    font-size: 1.5rem;
+    background-color: lightseagreen;
+    margin: 100px auto;
+    /*transform: rotate(20deg); */ /* is property ko hum transition ke sath jayda use karte hai */
+
+    /* Ab hume ise transition ke sath use karte hai... */
+   transition: transform 1s ease-in-out;
+   transform-origin: top right; /* to ab kya hai ye isi point se ghum jayega*/
+
+}
+
+.box:hover{
+    /* transform: rotate(90deg); */
+    /*transform: scale(2); */ /* is se hum grow kar skte hai*/
+    /*transform: translate(50px);*/ /* mtlv iski position change karna ho to ye use karte hai*/
+    transform: skewx(20deg);  /* iski value bhi deg me hi dete hai*/
+}

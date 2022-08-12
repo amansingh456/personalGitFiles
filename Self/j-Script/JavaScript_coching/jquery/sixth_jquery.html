@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery2.min.js"></script>
+    <script>
+            // jquery document object model pr kam krta hai....mtlv parents fir child ese kr k
+
+
+        $(document).ready(function(){    // dollar sign keval tag likhne k liye h to document menas body likh gya ab uska parent likhna ho to dollar button , pr ek chij yad rahe document me inverted cooma ni lagayege baki jitne bhi child tag honge sab me inverted cooma lagaynge 
+            $('button').click(function(){   // or isme function hamesa likhte hai j query me 
+                $('h1').hide(1000)
+                $('h2').css('color', 'red',)
+               
+            })
+
+            $('#b').click(function(){
+                $('h1').show(1000)
+                $('h2').css('color','black',) 
+            })
+        })
+
+
+           //or
+
+
+
+        // function chupja(){
+        //     document.getElementById('a').style.display='none'
+        // }
+
+    </script>
+</head>
+<body>
+    <h1 id="a">hello World</h1>
+    <h2>aman</h2>
+    <button> click</button>
+    <button id="b"> click2</button>
+
+    <!-- or -->
+
+    <!-- <button onclick="chupja()">click</button> -->
+</body>
+</html>

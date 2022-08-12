@@ -1,0 +1,48 @@
+/* box css */
+
+.box{
+    width:100px ;
+    height: 100px;
+    background-color: rgb(216, 0, 0);
+    animation-name: change-bg-color ;
+    animation-duration: 5s;
+    animation-iteration-count: 3; /* is se kya hai ye animation 3 bar hogi*/
+    animation-delay: 3s;
+    animation-fill-mode: forwards; /* is se kya hoga jo last me color hoga wahi rahega*/
+
+}
+
+@keyframes change-bg-color{
+    from{
+        background: black;
+    }
+
+    to{
+        background: yellowgreen;
+    }
+}
+
+
+
+
+
+/* box-1 css */
+
+.box-1{
+    width: 15px;
+    height: 10px;
+    background-color: blue;
+    animation-name: grow-width;
+    animation-duration: 4s; 
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes grow-width{
+    from{
+        width: 0;
+    }
+    to{
+        width: 400px;
+    }
+}

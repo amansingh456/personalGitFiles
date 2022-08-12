@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.h-menu{
+    
+    position: relative;
+}
+
+.h-menu input{
+    display: block;
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    width: 45px;
+    height: 40px;
+    z-index: 5;
+    opacity: 0;
+}
+
+
+.ham-lines{
+    position: absolute;
+    width:40px;
+    height: 32px;
+    /* background: lightseagreen; */
+    /* top: 5px;
+    left: 5px; */
+    margin-top: 7px;
+    margin-left: 7px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ham-lines .line{
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #302f2f;
+    border-radius: 10px;
+}
+
+
+
+/* 1.) state check karni aani chhaiye */
+/* 2.) agr check box clicked hai to select karna hai menu items */
+
+
+.menu-items{
+    padding-top: 60px;
+    transform: translateX(-110%);
+    transition: transform 0.3s ease-in;
+    
+    padding-left: 10px;
+    background: #2e2d2d;
+    color: white;
+    margin-top: -1px;
+    margin-left: -0.3px;
+    padding-bottom: 0.2rem;
+}
+.menu-items .one{
+    margin-top: 2rem;
+}
+
+
+/*  ye line sabse important thi */
+.h-menu input[type="checkbox"]:checked ~ .menu-items{
+    display: block;
+    transform: translateX(0%);
+    
+}
+
+.h-menu input[type="checkbox"]:checked ~ .ham-lines .line{
+    background-color: white
+}
+
+
+/* 3 span line ko cross banayege */
+
+.ham-lines .lin-1{
+    transform-origin:0% 0% ;
+}
+
+
+.ham-lines .lin-3{
+    transform-origin: 0% 100%;
+}
+
+.h-menu input[type="checkbox"]:checked ~ .ham-lines .line-1{
+    transform: rotate(45deg);
+}
+
+.h-menu input[type="checkbox"]:checked ~ .ham-lines .line-3{
+    transform: rotate(-45deg);
+}
+
+.h-menu input[type="checkbox"]:checked ~ .ham-lines .line-2{
+    display: none;
+}
+
+

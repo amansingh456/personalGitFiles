@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    font-family: 'Syne Tactile', cursive;
+} */
+
+.heading{
+    color: red;
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-shadow: 0px 2px 4px #ffe9c5;
+    margin: 70px 0;
+    font-family: 'Syne Tactile', cursive;
+}
+
+.img_div{
+    display: flex;
+    justify-content: center;
+}
+
+.img_div img{
+    width: 250px;
+    height: 300px;
+    
+
+}

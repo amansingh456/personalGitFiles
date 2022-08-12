@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery2.min.js"></script>
+    
+
+    <style>
+        #ee{
+            display: none;
+        }
+    </style>
+
+    <script>
+            $(document).ready(function(){
+                $('button').click(function(){
+                    $('button').hide() 
+                    $('#ee').show()
+                })
+                
+            })
+
+           
+
+
+
+        function upp(){
+            h=prompt('enter Heinght')
+            w=prompt('enter width')
+            bg=prompt('enter backgroundColour')
+            name=prompt('enter your name')
+
+            document.getElementById('a').style.height=h
+            document.getElementById('a').style.width=w
+            document.getElementById('a').style.backgroundColor=bg
+            document.getElementById('a').innerHTML=name
+        }
+    </script>
+    
+</head>
+<body>
+    <div id="a">
+        <button onclick="upp()"> click </button>
+        <h1 id="ee">BUDDY LOVE THE WAY YOU LIE</h1>
+    </div>    
+</body>
+</html>

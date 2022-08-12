@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clok(){
+            x= new Date()
+
+             document.getElementById('a').innerHTML=x
+             // .value input box me data likhti hai...., h1 tag ya fir paragraph tag k liye innerHTML likhte hai....
+        }
+
+            // or
+
+
+        function digi(){
+            t= new Date()
+
+            h= t.getHours() //ab ye variable kya krega full date jo show ho  thi usme se muje sirf hour ki value nikal ke de dega
+            m= t.getMinutes() //ab ye variable kya krega full date jo show ho  thi usme se muje sirf minute ki value nikal ke de dega
+            s= t.getSeconds() //ab ye variable kya krega full date jo show ho  thi usme se muje sirf second ki value nikal ke de dega
+
+
+            if(h>12){
+                h=h-12
+                document.getElementById('b').innerHTML=h+':'+m+':'+s+' PM'
+            }
+            else{
+                h=h
+                document.getElementById('b').innerHTML=h+':'+m+':'+s+' AM'
+            }
+
+
+           
+        }
+
+
+
+            // or
+
+
+        function atex(){
+            e= new Date()
+
+            y= e.getYear() //ab ye variable kya krega full date jo show ho  thi usme se muje sirf year ki value nikal ke de dega
+            u= e.getMonth() //ab ye variable kya krega full date jo show ho  thi usme se muje sirf months ki value nikal ke de dega
+            // d= e.getDates() //ab ye variable kya krega full date jo show ho  thi usme se muje sirf date ki value nikal ke de dega
+            x=e.getDay()
+            document.getElementById('c').innerHTML=y+'/'+u+'/'+x
+        }
+
+
+
+        // agr function apne aap dekhna chah rhe ho bina kisi event ke mtvl bina kisis onchange ya fir onclick ke to function ko yha call kra kr usme interval set kr do...
+        //jese me ye kr rha hu digital clock ke liye...
+        // jo second wali coding hai uske liye....
+
+        setInterval('digi()', 1000)
+
+
+    </script>
+</head>
+<body>
+    <button onclick="clok()">click here to display time with date and all...</button>
+    <p id="a"></p>
+
+    <!-- or -->
+    <!-- <button onclick="digi()">click here to display digital clock</button>    // kyoki upper call kra diya hai function -->
+    <h1 id="b"></h1>
+
+    <!-- or -->
+    <button onclick="atex()">click here to see DATE</button>
+    <h3 id="c"></h3>
+</body>
+</html>
+

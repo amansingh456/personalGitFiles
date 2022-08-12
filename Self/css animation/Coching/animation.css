@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+ul{
+    margin-top: 40vh;
+    margin-left: 40%;
+    display: flex;
+}
+li{
+    font-size: 50px;
+    list-style: none;
+}
+
+ul:hover li{
+    animation: ani 4s linear forwards;
+}
+@keyframes ani{
+    0%{
+        transform: translate(0px,0px);
+    }
+    100%{
+        transform: translate(400px,200px);
+        opacity: 0;        
+    }
+}
+ul li:nth-child(1){
+    animation-delay: 0s;
+}
+ul li:nth-child(2){
+    animation-delay: 1s;
+}
+ul li:nth-child(3){
+    animation-delay: 2s;
+}
+ul li:nth-child(4){
+    animation-delay: 3s;
+}

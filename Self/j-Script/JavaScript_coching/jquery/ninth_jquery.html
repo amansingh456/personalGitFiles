@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery2.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            // $('#a').click(function(){
+            //     $('#b').slideUp(2000)
+            // })
+
+            // $('#a').click(function(){
+            //     $('#b').slideDown(1000)
+            // })
+ 
+
+
+
+            // ya ye lga do ya uper ke dono lage rehne do...(uper wale se ek click me hi up and down don ho rha tha yha up ke liye bhi click krna pdega or down ke liye bhi..)
+
+            $('#a').click(function(){
+                $('#b').slideToggle(1000)   // toggle se jitni bar jaldi jaldi click kr diya utni bar chalta hi rahega
+            })
+        })
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #a{
+            height: 100px;
+            width: 100%;
+            background-color: aquamarine;
+        }
+        #b{
+            height: 83.2vh;
+            width: 100%;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="a"></div>
+    <div id="b"></div>
+</body>
+</html>

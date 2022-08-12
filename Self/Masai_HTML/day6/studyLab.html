@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fdfcfc;
+        }
+
+        #main_container {
+            width: 90%;
+            height: 100vh;
+            margin: auto;
+            background-color: #fdfcfc;
+        }
+
+        .navbar {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            box-shadow: rgb(17 17 26 / 13%) 0px 2px 5px;
+        }
+
+        .navbar div:first-child {
+            width: 12%;
+            height: 100%;
+            /* border: 1px solid red; */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background: linear-gradient(135deg, rgb(158, 34, 158) 10%, #0892d0 100%);
+
+        }
+
+        .navbar div:first-child p {
+            font-size: 30px;
+            margin: 12px 0px;
+        }
+
+        .navbar div:last-child {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            /* border: 1px solid red; */
+            align-items: center;
+            font-size: 18px;
+            font-family: monospace;
+
+        }
+
+        .navbar div:last-child p:first-child {
+            color: blue;
+        }
+
+        .section {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .section>div {
+            width: 49%;
+            height: 500px;
+            /* border: 1px solid red; */
+        }
+
+        .section>div.first_box h3 {
+            font-family: monospace;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            word-spacing: -5px;
+            color: blue;
+
+        }
+
+        .section>div.first_box h1 {
+            width: 70%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-transform: capitalize;
+            color: #343434;
+            letter-spacing: 1px;
+            word-spacing: 5px;
+            line-height: 45px;
+        }
+
+        .section>div.first_box p {
+            width: 85%;
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(134, 133, 133);
+            line-height: 28px;
+        }
+
+        .section>div.first_box>div.child_first_box {
+            width: 100%;
+            height: 100px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: flex-start;
+
+
+        }
+
+        .section>div.first_box>div.child_first_box>div.first_logo {
+            width: 30%;
+            height: 100%;
+            /* border: 1px solid red; */
+        }
+
+        .section>div.first_box>div.child_first_box>div.heading_div {
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            width: 66%;
+            height: 100%;
+            /* border: 1px solid red; */
+
+        }
+
+        .section>div.first_box>div.child_first_box>div.heading_div p {
+            color: black;
+            font-size: 18px;
+            /* letter-spacing: 1px; */
+            word-spacing: 4px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .section>div.first_box>div.child_first_box>div.first_logo>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .section>div:last-child {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+        }
+
+        .section>div:last-child>div {
+            width: 37%;
+            height: 43%;
+            /* border: 1px solid black; */
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            border-radius: 5px;
+
+        }
+
+        .section img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .secnd_box > div{
+            padding: 20px;
+        }
+
+        .secnd_box > div > h4{
+            width: 200px;
+            margin: 5px 0px 20px 0px;
+            color: black;
+            font-size: 18px;
+            word-spacing: 2px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .secnd_box > div > p{
+            font-size: 16.5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(134, 133, 133);
+            line-height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main_container">
+        <div class="navbar">
+            <div>
+                <p>StudyLab</p>
+            </div>
+            <div>
+                <p>Home</p>
+                <p>About</p>
+                <p>Course</p>
+                <p>Instructor</p>
+                <p>Blog</p>
+                <p>Contact</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="first_box">
+                <h3>Welcome to studyLab</h3>
+                <h1>we are Studylab an online learning center</h1>
+                <p>A small river named Duden flows by their place and supplies it with necessary regelialia. It is a
+                    paradisematic country, in which roasted part of sentences fly into your mouth.</p>
+                <p>For the away, behind the mountains, a small river named Duden flows by their place and suppliesit
+                    with necessary regelialia. It is a paradisematic country, in which roasted part of sentences fly
+                    into your mouth.</p>
+                <div class="child_first_box">
+                    <div class="first_logo">
+                        <img src="https://www.solodev.com/core/fileparse.php/131/urlt/popup-video-img.jpg" alt="">
+                    </div>
+                    <div class="heading_div">
+                        <p>Learning anything from StudyLab, watch video</p>
+                    </div>
+                </div>
+            </div>
+            <div class="secnd_box">
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Quality_images_logo.svg/246px-Quality_images_logo.svg.png"
+                        alt="">
+                    <h4>Top Qualtiy Content </h4>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Quality_images_logo.svg/246px-Quality_images_logo.svg.png"
+                        alt="">
+                    <h4>Highly Skilled Instructor</h4>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Quality_images_logo.svg/246px-Quality_images_logo.svg.png"
+                        alt="">
+                    <h4>World Class & Quiz </h4>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Quality_images_logo.svg/246px-Quality_images_logo.svg.png"
+                        alt="">
+                    <h4>Get Certified</h4>
+                    <p>A small river named Duden flows by their place and supplies</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

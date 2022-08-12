@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Website Design</title>
+    <link rel="stylesheet" href="tesla.css">
+    <script>
+        var data = [
+            {
+                model : 'model S',
+                image: "url(images/image-1.png)",
+                initialSpeed : '1.5 s',
+                topSpeed : '200 mph',
+                maxRange : '396'
+            },
+            {
+                model : 'model 3',
+                image: "url(images/image-2.png)",
+                initialSpeed : '2.2 s',
+                topSpeed : '210 mph',
+                maxRange : '496'
+            },
+            {
+                model : 'model X',
+                image: "url(images/image-3.png)",
+                initialSpeed : '2.5 s',
+                topSpeed : '300 mph',
+                maxRange : '296'
+            },
+            {
+                model : 'model Y',
+                image: "url(images/image-4.png)",
+                initialSpeed : '2.9 s',
+                topSpeed : '150 mph',
+                maxRange : '516'
+            },
+        ];
+    </script>
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="./images/tesla-logo-png-2255.png" class="logo">
+            <ul>
+                <script>
+                    data.map((data, index) =>{
+                        document.write(`<li><a href="#" onclick="changeData(${index})" class="nav">${data.model}</a></li>`)
+                    })                    
+                </script>
+            </ul>
+            <a href="#" class="btn">Reserve Now</a>
+        </nav>
+        <div class="info">
+            <div>
+                <h2 id="initialSpeed">1.5 s</h2>
+                <p id="lob">60 mph</p>
+            </div>
+            <div>
+                <h2 id="topSpeed">200 mph</h2>
+                <p id="lob">Top Speed</p>
+            </div>
+            <div>
+                <h2 id="maxRange">396 </h2>
+                <p id="lob">Max Range</p>
+            </div>
+            <div class="line">
+
+            </div>
+            <div>
+                <h2 id="model">model S</h2>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var header = document.getElementById('header')
+        var model = document.getElementById('model')
+        var initialSpeed = document.getElementById('initialSpeed')
+        var topSpeed = document.getElementById('topSpeed')
+        var maxRange = document.getElementById('maxRange')
+        
+        
+        
+        function changeData(id){
+            
+            data.forEach((element,index) => {
+                if (id == index) {
+                    header.style.backgroundImage = element.image
+                    model.innerHTML = element.model
+                    initialSpeed.innerHTML = element.initialSpeed
+                    topSpeed.innerHTML = element.topSpeed
+                    maxRange.innerHTML = element.maxRange
+                }
+            });
+        }
+
+
+    </script>
+</body>
+</html>

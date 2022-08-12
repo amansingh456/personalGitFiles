@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 100px;
+        }
+        /* medium screen */
+        @media all and (min-width:480px) and (max-width:790px) {
+            body {
+                background-color: teal;
+            }
+
+            p {
+                background-color: blue;
+                font-size: 60px;
+            }
+        }
+
+        /* small screen */
+        @media all and (min-width:100px) and (max-width:479px) {
+            body {
+                background-color: orange;
+            }
+
+            p {
+                background-color: orangered;
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>Masai School</p>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(Images/wp9378806.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+
+.taskbar{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #e0e8f3;
+}
+
+
+.right{
+    position: absolute;
+    right: 0;
+    top: -0.22px;
+   
+}
+.startmenu{
+    position: absolute;
+    bottom: 60px;
+    /* bottom: -655px; */
+
+    width: 100%;
+    text-align: center;
+    transition: all  ;
+
+}
+
+.startmenu img{
+    height: 600px;
+    width: 650px;
+    border-radius: 10px;
+}

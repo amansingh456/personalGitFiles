@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery2.min.js"></script>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+            /* position: absolute; */
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('div').hover(function(){
+                $('div').animate({height:'300px', width:'300px'}, 1000)
+                $('div').animate({height:'100px', width:'100px'}, 1000)
+                $('h1').animate({fontSize:'100px'}, 1000)
+                $('h1').animate({fontSize:'30px'}, 1000)
+                
+                
+            })
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Aman</h1>
+    </div>
+    
+</body>
+</html>

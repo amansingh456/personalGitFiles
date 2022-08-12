@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 1st  Trick for Center */
+/* .Mdiv{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: red;
+}
+.Cdiv{
+    background-color: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+
+
+
+/* 2nd Trick for center */ 
+/* .Mdiv{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cdiv{
+    background-color: azure;
+} */
+
+
+
+
+
+/* 3rd Trick  for center */
+/* .Mdiv{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    display: grid;
+    place-items: center;
+  
+}
+
+.Cdiv{
+    background-color: azure;
+} */
+
+
+
+
+
+
+.Mdiv{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+button{
+    font-size: 1rem;
+    background-color: aquamarine;
+    padding: 1rem;
+}
+
