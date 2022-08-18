@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Likes :<span id="like"></span></p>
+    <p>Disikes :<span id="dislike"></span></p>
+    <button onclick="likeFun()">Like ❣️</button>
+    <button onclick="disLikeFun()">Dislike 😒</button>
+</body>
+</html>
+<script>
+
+    let lCount = localStorage.getItem("like_img") 
+    if(localStorage.getItem("like_img")==null){
+        lCount=0
+    }
+    else{
+        lCount = localStorage.getItem("like_img")
+    }
+
+    let dCount = localStorage.getItem("dislike_img") ||0
+    // if(localStorage.getItem("dislike_img")==null){
+    //     dCount=0
+    // }
+    // else{
+    //     lCount = localStorage.getItem("like_img")
+    // }
+
+    document.querySelector("#like").innerText=lCount
+    document.querySelector("#dislike").innerText=dCount
+
+    function likeFun(){
+        lCount++
+        document.querySelector("#like").innerText=lCount
+        localStorage.setItem("like_img", lCount)
+    }
+
+    function disLikeFun(){
+        dCount++
+        document.querySelector("#dislike").innerText=dCount 
+        localStorage.setItem("dislike_img", dCount)
+    }
+
+    let z = localStorage.getItem("dskjbjabfjknfa")
+    console.log(z)  // it will return null when key is not present in LS
+
+    // localStorage.clear()
+</script>
+
+
+
+
+
+
