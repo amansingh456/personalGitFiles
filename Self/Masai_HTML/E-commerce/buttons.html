@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <button></button> -->
+  </body>
+</html>
+
+<script>
+
+  // // if i want 10 buttons...
+  // let names = ["primary","secondary","success","danger","warning","info","light","dark","link"]
+  // let colors = ["blue","grey","green","red","yellow","cyan","whitesmoke","black","lightblue"]
+
+  let colorobj = [
+    { name: "primary", color: "blue" },
+    { name: "secondary", color: "grey" },
+    { name: "success", color: "green" },
+    { name: "danger", color: "red" },
+    { name: "warning", color: "yellow" },
+    { name: "info", color: "cyan" },
+    { name: "light", color: "whitesmoke" },
+    { name: "dark", color: "black" },
+    { name: "link", color: "lightblue" },
+  ];
+
+//   for (i = 0; i < colorobj.length; i++) {
+//     let btn = document.createElement("button");
+
+//     btn.innerText = colorobj[i].name;
+//     btn.style.background = colorobj[i].color;
+
+//     document.querySelector("body").append(btn);
+//   }
+
+
+    //forEach loop se --> 
+    colorobj.forEach((el)=>{
+        // console.log(elem)
+        let btn = document.createElement("button");
+        btn.innerText = el.name;
+        btn.style.background = el.color;
+        document.querySelector("body").append(btn);
+    })
+
+
+</script>
