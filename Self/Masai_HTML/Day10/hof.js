@@ -4,7 +4,7 @@
 // })
 
 
-
+  
 
 // let numArr = [1,3,6]
 
@@ -13,7 +13,7 @@
 // }
  
 // let sqNumArr = numArr.map(sq)
-// console.log(sqNumArr)
+// console.log(sqNumArr) 
 
 
 
