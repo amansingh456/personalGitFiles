@@ -10,7 +10,7 @@
     height: 100vh;
     background: #8566aa;
     display: flex;
-    flex-direction: '';
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -22,6 +22,7 @@
     background-color: #f4f4f4;
     box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
     border-radius: 15px;
+    margin-bottom: 20px;
 }
 
 h1{
@@ -141,3 +142,26 @@ ol li{
 
     }
 }
+
+
+@media (max-width:450px){
+    .center_div{
+        width: 80%;
+    } 
+ 
+    .todo_style .fa-times{
+        margin:  0 15px 0 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+    button{
+        margin-left: 5px;
+        min-height: 40px;
+        width: 40px;
+        color: 40px;
+        font-size: 30px;
+ 
+     }
+ }

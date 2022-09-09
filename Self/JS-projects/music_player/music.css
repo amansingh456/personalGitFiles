@@ -88,6 +88,13 @@ img{
     box-shadow: 0 1rem 2rem 0.2rem rgba(0, 0, 0, 0.4)
 }
 
+#owner{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
+    color: #a09c9c;
+}
+
 
 .anime{
     animation: rotatePlayer 3s linear infinite;
