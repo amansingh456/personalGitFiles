@@ -7,3 +7,4 @@ ReactDOM.render(
     <App/>,
     document.getElementById('root')
 )
+// only for git check i wrote this
