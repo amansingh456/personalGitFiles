@@ -4,7 +4,7 @@ import React from "react";
 function App(){
     // new Date(year, month, day, hours, minutes, seconds, miliseconds)
 
-    let currDate = new Date(2022,2,17,14)
+    let currDate = new Date() //(2022,10,13,22)--> like this we can simply give the random value also
     currDate = currDate.getHours()
 
     let greeting = ''
